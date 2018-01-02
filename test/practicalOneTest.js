@@ -14,11 +14,11 @@ describe('reverseWordsInString()', function () {
 describe('isPalindrome()', function () {
   it('should determine if string is a palindrome', function () {
     // ASSERTIONS
-    expect(true).to.be.equal(practicalOne.isPalindrome('racecar'));
-    expect(true).to.be.equal(practicalOne.isPalindrome('Hannah'));
-    expect(true).to.be.equal(practicalOne.isPalindrome('Able was I ere I saw Elba'));
-    expect(false).to.be.equal(practicalOne.isPalindrome('Kevin likes to climb rocks'));
-    expect(false).to.be.equal(practicalOne.isPalindrome('Hannahash'));
+    expect(practicalOne.isPalindrome('racecar')).to.be.true;
+    expect(practicalOne.isPalindrome('Hannah')).to.be.true;
+    expect(practicalOne.isPalindrome('Able was I ere I saw Elba')).to.be.true;
+    expect(practicalOne.isPalindrome('Kevin likes to climb rocks')).to.be.false;
+    expect(practicalOne.isPalindrome('Hannahash')).to.be.false;
   });
 });
 
